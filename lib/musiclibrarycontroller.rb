@@ -100,6 +100,7 @@ end
     if (1..Song.all.length).include?(input.to_i)
       song =Song.all.sort{|a,b| a.name <=>b.name}[input.to_i - 1]
       puts "playing #{song.name} by #{song.artist.name}"
+    end
   end
 
     
