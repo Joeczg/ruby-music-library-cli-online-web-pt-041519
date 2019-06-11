@@ -97,7 +97,7 @@ end
   def play_song
     puts "Which song number would you like to play?"
     input =gets.strip
-    if Song.all.length
+    if (1..Song.all.length).include?(input.to_i.size)
   end
 
     
